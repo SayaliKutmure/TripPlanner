@@ -1,2 +1,4 @@
-# TripPlanner
-This is my Interactive Trip Planner Full Stack Project.
+# WanderLustExplorer
+# WanderLustExplorer
+# WanderLustExplorer
+# Trip-Planner
