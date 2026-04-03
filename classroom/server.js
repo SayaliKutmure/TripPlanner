@@ -37,19 +37,6 @@ app.get("/hello" ,(req ,res) =>{
     res.render("page.ejs",{name: req.session.name  });
 });
 
-/*app.get("/reqcount",(req, res) => {
-    if( req.session.count >1 ){
-         req.session.count++;
-    }else{
-         req.session.count =1;
-    }
-    
-    res.send(`you send a request ${req.session.count} times`);
-})
-
-app.get("/test",(req, res) => {
-    res.send("test succesfully");
-})*/
 
 
 
@@ -60,35 +47,6 @@ app.get("/test",(req, res) => {
 
 
 
-/*app.use(cookieParser("secretcode"));
 
-app.get("/getsignedcookie" , (req ,res) =>{
-    res.cookie("Made-in","india",{signed :true});
-    res.send("signed cookie sent");
-});
 
-app.get("/verify" , (req ,res) =>{
-    console.log(req.cookies);
-    res.send("verified");
-})
 
-app.get("/getcookies",(req ,res) =>{
-    res.cookie("greet","hello");
-    res.cookie("madeIn","india");
-    res.send("sent your some cookies");
-})
-app.get("/",(req ,res) =>{
-    let {name ="anonyous"} =req.cookies;
-    res.send(`Hi , ${name}`);
-})
-
-app.get("/", (req ,res) => {
-    console.dir(req.cookies);
-    res.send("hii , i amr root");
-})
-app.use("/users", users);
-app.use("/posts", posts);*/
-
-app.listen(3000, () =>{
-    console.log("hi , i am listning 3000");
-});
