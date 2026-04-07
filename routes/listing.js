@@ -1,34 +1,4 @@
-/*const express = require("express");
-const router = express.Router();
-const wrapAsync = require("../utils/wrapAsync.js");
-const listing = require("../model/listing.js");
-const {isLoggedIn} = require("../middleware.js");
-const {  saveRedirectUrl, isOwner , validateListing } = require("../middleware");
 
-const listingController = require("../controllers/listing.js");
-
-router
-.route("/")
-.get(wrapAsync(listingController.index))
-.post(
-  isLoggedIn, 
-  validateListing , 
-  wrapAsync(listingController.createListing));
-
-// new routs
-router.get("/new", isLoggedIn ,listingController.renderNewForm); 
-
-router.route("/")  
-.get(listingController.showListings)
-.put( validateListing ,
-      isLoggedIn , 
-      isOwner , 
-      wrapAsync ,
-      listingController.updateListing)
-.delete(isLoggedIn,isOwner , listingController.destroyListing);
-          //EDIT ROUT
-router.get("/:id/edit",  isLoggedIn ,isOwner , listingController.renderEditForm);
-module.exports= router;*/
 
 
 const express = require("express");
